@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index.html</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="main-body">
+    <header><h1>This is the Main webpage</h1></header>
+    <nav id="main-nav" role="navigation" aria-labelledby="main-p">
+        <p id="main-p">Something about Animals</p>
+    </nav>
+    <div class="sidebar" role="complementary">
+        <label for="animalInput">Enter an animal:</label><br>
+        <input type="text" id="animalInput" aria-label="Animal Input"><br>
+        <button onclick="checkAnimal()">Check</button><br>
+        <p id="animalMessage"></p>
+        <br>
+        <ol id="list" aria-label="List">
+            <li><a href="Cat.html">Cat</a></li>
+            <li><a href="Dog.html">Dog</a></li>
+            <li><a href="Rabbit.html">Rabbit</a></li>
+            <li><a href="Parrot.html">Parrot</a></li>
+        </ol>
+    </div>
+    <div class="form-container" role="form">
+        <form id="petForm" aria-labelledby="petForms">
+            <label for="petName">Pet's Name:</label>
+            <input type="text" id="petName" name="petName"><br>
+            <label for="petType">Type of Animal:</label>
+            <select id="petType" name="petType">
+                <option value="">Select</option>
+                <option value="cat">Cat</option>
+                <option value="dog">Dog</option>
+                <option value="rabbit">Rabbit</option>
+                <option value="parrot">Parrot</option>
+            </select><br>
+            <label for="petAge">Age of Pet:</label>
+            <input type="number" id="petAge" name="petAge" min="0"><br>
+            <label for="petColor">Color of Pet:</label>
+            <input type="text" id="petColor" name="petColor"><br>
+            <label for="petDescription">Description:</label>
+            <textarea id="petDescription" name="petDescription"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

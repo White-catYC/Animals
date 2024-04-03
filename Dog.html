@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog.html</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="second-b">
+    <header><h1 id="sec-h1">This is a webpage about Border Collie</h1></header>
+    <nav id="sec-nav" role="navigation" aria-labelledby="links to other pages">
+        <button><a href="index.html">Home</a></button>
+        <button><a href="Cat.html">Cat</a></button>
+        <button><a href="Rabbit.html">Rabbit</a></button>
+        <button><a href="Parrot.html">Parrot</a></button>
+        &nbsp;&nbsp;&nbsp;
+        <button id="wiki"><a href="https://en.wikipedia.org/wiki/Border_Collie" target="Border_Collie">Border Collie Wikipedia</a></button>
+        <div class="colorChange1">
+            <button onclick="toggleLightgreen()" id="colorScheme1Btn">Color Scheme 1</button>
+            &nbsp;
+            <button onclick="togglelightcoral()" id="colorScheme2Btn">Color Scheme 2</button>
+        </div>
+    </nav>
+    <div class="contains">
+    <img id="dog" src="border-collie-min.jpg" alt="Image 2" width="900" height="600">
+    <ol>
+        <li>
+            <P class="black-text">Growling: </P>
+            <audio controls aria-label="Growling Sound">
+                <source src="Growling.m4a" type="audio/mp4">
+            </audio>
+        </li>
+        <li>
+            <P class="white-text">Snarling: </P>
+            <audio controls aria-label="Snarling Sound">
+                <source src="Snarling.m4a" type="audio/mp4">
+            </audio>
+        </li>
+        <li>
+            <P class="black-text">Barking: </P>
+            <audio controls aria-label="Barking Sound">
+                <source src="Barking.m4a" type="audio/mp4">
+            </audio>
+        </li>
+        <li>
+            <P class="white-text">Barking and snarling: </P>
+            <audio controls aria-label="Barking and snarling Sound">
+                <source src="Barking and snarling.m4a" type="audio/mp4">
+            </audio>
+        </li>
+        <li>
+            <P class="black-text">Whining: </P>
+            <audio controls aria-label="Whining Sound">
+                <source src="Whining.m4a" type="audio/mp4">
+            </audio>
+        </li>
+        <li>
+            <P class="white-text">Friendly and playful: </P>
+            <audio controls aria-label="Friendly and playful Sound">
+                <source src="Friendly and playful.m4a" type="audio/mp4">
+            </audio>
+        </li>
+        <li>
+            <P class="black-text">Panting and sad: </P>
+            <audio controls aria-label="Panting and sad Sound">
+                <source src="Panting and sad.m4a" type="audio/mp4">
+            </audio>
+        </li>
+    </ol>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

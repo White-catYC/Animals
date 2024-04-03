@@ -1,0 +1,508 @@
+h1 {
+    color: white;
+    background-color: black;
+    margin: 0;
+}
+
+#main-body {
+    background-image: url(istockphoto-1296353202-2048x2048.webp);
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#main-nav {
+    padding: 10px;
+    margin: 0;
+}
+
+.sidebar {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    height: 100vh;
+    margin: 0;
+}
+
+.sidebar ol {
+    padding: 20px;
+    margin: 0;
+    list-style-type: georgian;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidebar ol li {
+    margin-bottom: 30px;
+}
+
+.sidebar ol li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar ol li a:hover {
+    text-decoration: underline;
+}
+
+@keyframes colorChange {
+    0% { color: red; }
+    25% { color: yellow; }
+    50% { color: blue; }
+    75% { color: purple; }
+    100% { color: green; }
+}
+
+#main-p {
+    animation: colorChange 5s infinite alternate; 
+}
+
+
+#sec-h1 {
+    text-align: center;
+    background-color: antiquewhite;
+    color: black;
+}
+
+.contains {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: antiquewhite;
+    min-height: 90vh; 
+    align-items: center;
+}
+
+#cat {
+    max-width: 100%;
+    height: auto;
+    border: 10px solid rgb(172, 221, 239);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+#dog {
+    height: auto;
+    border: 10px solid rgb(172, 221, 239);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contains img:hover {
+    transform: scale(1.10); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.contains table {
+    margin: 0; 
+    border-collapse: collapse;
+    width: calc(100% - 20px);
+
+}
+
+.contains table:hover {
+    transform: scale(1.45); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.contains table th, .contains table td {
+    border: 2px solid #e2d818;
+    padding: 10px;
+    text-align: left;
+}
+
+.contains table th {
+    background-color: #f0f0f0;
+}
+
+.contains table td {
+    background-color: #fff;
+}
+
+.contains iframe {
+    margin: 10px;
+    max-width: calc(100% - 20px);
+    border-radius: 10px; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#second-b {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f9f9f9; 
+    margin: 0; 
+    transition: background-color 0.3s ease;
+}
+
+#sec-nav {
+    background-color: #29262a;
+    padding: 10px;
+    text-align: center;
+}
+
+a:hover {
+    color: red;
+}
+
+nav > a {
+    font-weight: bold;
+    color: blue; 
+    text-decoration: none;
+}
+
+nav a + a {
+    margin-left: 10px;
+}
+
+nav a:hover + a {
+    color: #9b7c7c;
+}
+
+nav a::before {
+    content: "[ ";
+}
+
+nav a::after {
+    content: " ]";
+}
+
+.black-text {
+    color: black;
+}
+
+.white-text {
+    color: white;
+}
+
+ol {
+    margin: 50px;
+    margin-left: 35%;
+}
+
+button {
+    background-color: rgb(172, 221, 239); 
+    border: none;
+    padding: 6px 23px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #f4f8f4; 
+}
+
+#wiki {
+    background-color: #d998f5;
+}
+
+#wiki:hover {
+    background-color: #f4f8f4;
+    transform: scale(1.10); 
+    box-shadow: 0 0 10px rgb(172, 221, 239);
+}
+
+
+#body3 {
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#header3 {
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    grid-area: header;
+    color: white;
+}
+
+#thr-nav {
+    text-align: center;
+    padding: 10px;
+    grid-area: nav;
+}
+
+#thr-nav button a {
+    color: blueviolet;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#thr-nav button a:hover {
+    color: red; 
+}
+
+.contain {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav";
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.contain > * {
+    background-color: rgb(232, 191, 102);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.contain ul {
+    list-style-type: none;
+}
+
+.contain ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#Rabbit1 {
+    width: 80%;
+    height: auto;
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+#Rabbit2 {
+    width: 80%;
+    height: auto;
+    border: 2px solid rgb(43, 110, 226);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+#Rabbit2:hover {
+    filter: grayscale(50%) brightness(150%) contrast(300%);
+    transition: filter 0.5s;
+}
+
+@keyframes colorChange2 {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: purple; }
+}
+
+.contain p {
+    margin: 0;
+    width: 100%;
+    animation: colorChange2 5s infinite alternate;
+}
+
+.contain video {
+    width: 100%; 
+    height: auto; 
+    margin-top: 10px;
+}
+
+
+#parrot {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 767px) {
+    #dog {
+        margin: 10px;
+        max-width: 100%;
+    }
+    #main-body {
+        width: auto;
+        height: auto;
+    }
+    #parrot {
+        width: auto;
+        height: auto;
+    }
+    ol {
+        margin: auto;
+        margin-left: auto;
+    }
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #dog {
+        margin: 15px;
+        max-width: 100%;
+    }
+    #main-body {
+        width: auto;
+        height: auto;
+    }
+    #parrot {
+        width: auto;
+        height: auto;
+    }
+    ol {
+        margin: auto;
+        margin-left: auto;
+    }
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+    
+}
+
+.form-container {
+    position: fixed;
+    top: 50px; 
+    right: 20px;
+    width: auto; 
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+.button-container {
+    margin-left: 0; 
+    text-align: left;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+    background-color: #45a049;
+}
+
+.form-container form {
+    margin-top: 20px;
+}
+
+.form-container label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container select,
+.form-container textarea {
+    width: calc(100% - 16px); 
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.form-container button[type="submit"] {
+    width: calc(100% - 40px); 
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+body.horror .contains {
+    background-color: #4d0101;
+    color: red;
+}
+body.horror h1 {
+    font-family: 'Creepster', cursive;
+    font-size: 48px;
+    color: black;
+}
+body.horror #cat {
+    filter: contrast(150%) brightness(80%) sepia(50%) hue-rotate(180deg) saturate(200%);
+}
+
+#colorScheme1Btn, #colorScheme2Btn, #horrorScheme, #colorScheme1, #colorScheme2 {
+    background-color: white;
+}
+#horrorScheme:hover {
+    background-color: #4d0101;
+    color: red;
+    transform: scale(1.10); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#colorScheme1Btn:hover {
+    background-color: lightgreen;
+    transform: scale(1.10); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#colorScheme2Btn:hover {
+    background-color: lightcoral;
+    transform: scale(1.10); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#colorScheme1:hover {
+    background-color: lightgoldenrodyellow;
+    transform: scale(1.10); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#colorScheme2:hover {
+    background-color: lightskyblue;
+    transform: scale(1.10); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+body.light-green-bg .contains {
+    background-color: lightgreen;
+}
+body.light-coral-bg .contains {
+    background-color: lightcoral;
+}
+body.bg1 .contain {
+    background-color: rgb(248, 248, 85);
+}
+body.bg2 .contain {
+    background-color: rgb(129, 247, 247);
+}
+body.bg1 ul {
+    background-color: lightgoldenrodyellow;
+}
+body.bg2 ul {
+    background-color: lightcyan;
+}
+body.bg1 nav {
+    background-color: rgb(236, 236, 17);
+}
+body.bg2 nav {
+    background-color: rgb(18, 243, 243);
+}
+body.bg1 h1 {
+    color: darkgoldenrod;
+}
+body.bg2 h1 {
+    color: darkcyan;
+}
